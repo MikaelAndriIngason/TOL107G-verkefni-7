@@ -71,7 +71,7 @@ function round() {
     let computerInput = Math.floor(Math.random() * 3) + 1;
 
     //Ef notandinn hættir að spila
-    if (playerInput == "cancel" || playerInput == null) {
+    if (playerInput.toLowerCase() == "cancel" || playerInput == null) {
         console.log("Þú hefur hætt leikinum");
         return -2;
     }
